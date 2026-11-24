@@ -31,7 +31,7 @@
   .glabel { font-weight: 600; }
   .gmeta { color: #666; font-size: 11px; }
   svg { width: 100%; height: 100%; display: block; }
-  .node text.nlabel, .labels text.nlabel { font-size: 11px; font-weight: 700; fill: #111; pointer-events: none; paint-order: stroke fill; stroke: #fff; stroke-width: 3px; stroke-linejoin: round; }
+  .node text.nlabel, .labels text.nlabel { font-size: 11px; font-weight: 700; fill: #111; pointer-events: none; stroke: none; }
   .node.dim, .links line.dim { opacity: 0.12; }
   #tooltip { position: absolute; opacity: 0; pointer-events: none; background: rgba(255,255,255,0.96); border: 1px solid #ddd; border-radius: 5px; padding: 8px 10px; font-size: 12px; line-height: 1.5; max-width: 280px; box-shadow: 0 2px 8px rgba(0,0,0,0.12); z-index: 10; }
   .legend { position: absolute; left: 18px; bottom: 16px; display: flex; flex-wrap: wrap; gap: 14px 16px; font-size: 12.5px; background: rgba(255,255,255,0.88); padding: 8px 10px; border-radius: 5px; }
@@ -52,7 +52,7 @@
 <div class="toolbar">
   <span class="label-group">Labels:</span>
   <label><input type="checkbox" id="chkNo" checked> Numbers</label>
-  <label><input type="checkbox" id="chkTerm" checked> Terms</label>
+  <label><input type="checkbox" id="chkTerm"> Terms</label>
   <span class="sep"></span>
   <label>Link distance <input type="range" id="rngDist" min="40" max="800" value="400"></label>
   <label>Repulsion <input type="range" id="rngCharge" min="-600" max="-20" value="-300"></label>
